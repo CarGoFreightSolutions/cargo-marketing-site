@@ -31,7 +31,7 @@ export default function Nav() {
           <Link to="/shipper/login" className="nav-login">Shipper Login</Link>
           <span className="nav-divider" aria-hidden>|</span>
           <Link to="/carrier/login" className="nav-login">Carrier Login</Link>
-          <a href="#capacity" className="btn btn-primary" style={{ padding: '8px 14px', fontSize: 13 }}>
+          <a href="#shipper-contact" className="btn btn-primary" style={{ padding: '8px 14px', fontSize: 13 }}>
             Find Capacity <span className="arr">→</span>
           </a>
           <button
@@ -50,7 +50,7 @@ export default function Nav() {
         <div className="mobile-menu-divider"></div>
         <Link to="/shipper/login" onClick={() => setOpen(false)}>Shipper Login</Link>
         <Link to="/carrier/login" onClick={() => setOpen(false)}>Carrier Login</Link>
-        <a href="#capacity" className="btn btn-primary" style={{ marginTop: 8, justifyContent: 'center' }} onClick={() => setOpen(false)}>Find Capacity</a>
+        <a href="#shipper-contact" className="btn btn-primary" style={{ marginTop: 8, justifyContent: 'center' }} onClick={() => setOpen(false)}>Find Capacity</a>
       </div>
     </nav>
   );

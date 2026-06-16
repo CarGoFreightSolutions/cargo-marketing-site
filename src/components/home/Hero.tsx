@@ -91,10 +91,10 @@ export default function Hero() {
             </p>
 
             <div style={{ display: 'flex', gap: 12, marginTop: 32, flexWrap: 'wrap' }}>
-              <a href="#capacity" className="btn btn-primary">
+              <a href="#shipper-contact" className="btn btn-primary">
                 Find Capacity <span className="arr">→</span>
               </a>
-              <a href="#carriers" className="btn btn-secondary">
+              <a href="#carrier-contact" className="btn btn-secondary">
                 Post Available Truck
               </a>
               <a href="#invest" className="btn btn-ghost">Investor Inquiries</a>

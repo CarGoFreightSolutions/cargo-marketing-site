@@ -47,8 +47,8 @@ export default function Footer() {
               { label: 'Contact', href: '#contact' },
             ]} />
             <FootCol title="Platform" links={[
-              { label: 'Find Capacity', href: '#capacity' },
-              { label: 'Post Available Truck', href: '#carriers' },
+              { label: 'Find Capacity', href: '#shipper-contact' },
+              { label: 'Post Available Truck', href: '#carrier-contact' },
               { label: 'Shipper Login', href: '/shipper/login' },
               { label: 'Carrier Login', href: '/carrier/login' },
             ]} />

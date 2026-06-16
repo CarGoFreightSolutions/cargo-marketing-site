@@ -66,7 +66,7 @@ export default function Audiences() {
             eyebrow="Post available trucks and turn empty miles into revenue opportunities."
             title="Reduce deadhead. Fill backhauls. Earn on miles you'd otherwise drive empty."
             body="The CarGo Carrier app is being built so carriers can post available trucks, share preferred lanes, declare backhaul needs, and surface capacity windows — designed to match into freight that fits trucks already moving."
-            cta={{ label: 'Post Available Truck', href: '#carriers' }}
+            cta={{ label: 'Post Available Truck', href: '#carrier-contact' }}
             login={{ label: 'Carrier Login', to: '/carrier/login' }}
             bullets={[
               'Post available trucks, dates, and equipment',
@@ -83,7 +83,7 @@ export default function Audiences() {
             eyebrow="Find flexible freight capacity without chasing multiple carriers or brokers."
             title="Request freight, find capacity, work through quote and shipment in one place."
             body="The CarGo Shipper app is being built for shippers to request LTL, partial, or full truckload dry van freight, find available capacity, and work through a simplified quote and shipment process — supported by CarGo's automated matching layer and operational oversight."
-            cta={{ label: 'Find Capacity', href: '#capacity' }}
+            cta={{ label: 'Find Capacity', href: '#shipper-contact' }}
             login={{ label: 'Shipper Login', to: '/shipper/login' }}
             bullets={[
               'LTL · partial · FTL dry van requests',

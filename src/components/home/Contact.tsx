@@ -1,6 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import SectionHead from '../ui/SectionHead';
 import type { ReactNode, FormEvent } from 'react';
+
+const HASH_TO_TAB: Record<string, 'shipper' | 'carrier' | 'investor'> = {
+  '#shipper-contact': 'shipper',
+  '#carrier-contact': 'carrier',
+  '#investor-contact': 'investor',
+};
 
 interface ContactRowProps { label: string; value: ReactNode; }
 function ContactRow({ label, value }: ContactRowProps) {
@@ -68,6 +74,30 @@ function ContactForm({ id, title, fields, textarea, submitLabel }: FormProps) {
 
 export default function Contact() {
   const [tab, setTab] = useState<'shipper' | 'carrier' | 'investor'>('shipper');
+
+  // Jump links elsewhere on the site (e.g. "Find Capacity", "Post Available Truck")
+  // point at #shipper-contact / #carrier-contact / #investor-contact. Make sure the
+  // matching tab is selected — both on first load and if the hash changes while
+  // already on the page — so the anchor scroll actually lands on a real, visible form.
+  useEffect(() => {
+    const syncTabToHash = () => {
+      const match = HASH_TO_TAB[window.location.hash];
+      if (match) setTab(match);
+    };
+    syncTabToHash();
+    window.addEventListener('hashchange', syncTabToHash);
+    return () => window.removeEventListener('hashchange', syncTabToHash);
+  }, []);
+
+  // If the matching tab wasn't already active when the link was clicked, the
+  // browser's native anchor-scroll fires before the form exists in the DOM and
+  // silently no-ops. Once the right tab has rendered, finish that scroll ourselves.
+  useEffect(() => {
+    const target = document.getElementById(window.location.hash.slice(1));
+    if (target && HASH_TO_TAB[window.location.hash] === tab) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [tab]);
 
   const tabs: { id: typeof tab; label: string }[] = [
     { id: 'shipper', label: 'Shippers' },
