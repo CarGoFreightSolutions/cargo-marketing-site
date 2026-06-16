@@ -37,14 +37,14 @@ export default function ShipperLogin() {
         </div>
 
         <div style={{ position: 'relative', zIndex: 1, fontFamily: 'var(--mono)', fontSize: 11, color: 'rgba(255,255,255,0.4)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-          app.cargofreightsolutions.com / shipper / login
+          app.shipwithcargo.com / shipper / login
         </div>
       </aside>
 
       {/* Right: form */}
       <main className="auth-form-wrap">
         <form className="auth-form" onSubmit={handleSubmit}>
-          <Link to="/" className="auth-back">← Back to cargofreightsolutions.com</Link>
+          <Link to="/" className="auth-back">← Back to shipwithcargo.com</Link>
           <h1>Shipper sign in</h1>
           <p className="sub">Access your CarGo shipper account to request quotes and track shipments.</p>
 

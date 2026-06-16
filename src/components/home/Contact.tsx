@@ -90,10 +90,10 @@ export default function Contact() {
               background: 'white', border: '1px solid var(--steel-100)', borderRadius: 14, padding: 28,
               display: 'flex', flexDirection: 'column', gap: 16,
             }}>
-              <ContactRow label="General" value={<a href="mailto:hello@cargofreightsolutions.com" style={{ color: 'var(--blue)' }}>hello@cargofreightsolutions.com</a>} />
-              <ContactRow label="Investors" value={<a href="mailto:investors@cargofreightsolutions.com" style={{ color: 'var(--blue)' }}>investors@cargofreightsolutions.com</a>} />
-              <ContactRow label="Carriers" value={<a href="mailto:carriers@cargofreightsolutions.com" style={{ color: 'var(--blue)' }}>carriers@cargofreightsolutions.com</a>} />
-              <ContactRow label="Shippers" value={<a href="mailto:shippers@cargofreightsolutions.com" style={{ color: 'var(--blue)' }}>shippers@cargofreightsolutions.com</a>} />
+              <ContactRow label="General" value={<a href="mailto:hello@shipwithcargo.com" style={{ color: 'var(--blue)' }}>hello@shipwithcargo.com</a>} />
+              <ContactRow label="Investors" value={<a href="mailto:investors@shipwithcargo.com" style={{ color: 'var(--blue)' }}>investors@shipwithcargo.com</a>} />
+              <ContactRow label="Carriers" value={<a href="mailto:carriers@shipwithcargo.com" style={{ color: 'var(--blue)' }}>carriers@shipwithcargo.com</a>} />
+              <ContactRow label="Shippers" value={<a href="mailto:shippers@shipwithcargo.com" style={{ color: 'var(--blue)' }}>shippers@shipwithcargo.com</a>} />
               <hr className="hr" />
               <ContactRow label="Mailing address" value={<>
                 CarGo Freight Solutions, LLC<br />

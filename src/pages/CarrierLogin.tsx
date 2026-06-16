@@ -37,14 +37,14 @@ export default function CarrierLogin() {
         </div>
 
         <div style={{ position: 'relative', zIndex: 1, fontFamily: 'var(--mono)', fontSize: 11, color: 'rgba(255,255,255,0.4)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-          app.cargofreightsolutions.com / carrier / login
+          app.shipwithcargo.com / carrier / login
         </div>
       </aside>
 
       {/* Right: form */}
       <main className="auth-form-wrap">
         <form className="auth-form" onSubmit={handleSubmit}>
-          <Link to="/" className="auth-back">← Back to cargofreightsolutions.com</Link>
+          <Link to="/" className="auth-back">← Back to shipwithcargo.com</Link>
           <h1>Carrier sign in</h1>
           <p className="sub">Access your CarGo carrier account to post trucks and manage loads.</p>
 
